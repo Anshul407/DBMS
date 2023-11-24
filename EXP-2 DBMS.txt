@@ -1,0 +1,19 @@
+EXP-2 TO implement structure of table using ddl statements
+
+DDL--The structure of data is defined and change by ddl statements.
+Create,ALTER,DROP,TRUNCATE
+ALTER -The ALTER TABLE statement in SQL is used to add, drop, or modify columns in an existing table.
+
+SYNTAX OF ALTER
+1.ALTER TABLE empmst 
+ADD cid varchar(30)
+
+2.ALTER TABLE empmst 
+DROP column cid;
+
+3.ALTER TABLE empmst 
+MODIFY EID varchar(10)
+
+4.DROP TABLE empmst;
+5.TRUNCATE TABLE empmst; 
+

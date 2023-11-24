@@ -1,0 +1,37 @@
+exp-6
+to implement concepts of joins
+
+join=operation in dbms use to combine multiple rows from two or more table based on col relations
+
+cross join=returns cartesian prod of 2 tables
+
+natural join=combines two table based on column with same name
+
+LEFT OUTER JOIN=return all the rows from left table which matches from right table
+
+RIGHT OUTER JOIN=return all the rows from right table which matches  from left table
+
+FULL join=return all the rows when there is match in either left or right
+
+inner join=return only that rows with matching value in both table
+
+SYNTAX;
+
+SELECT *from table_name CROSS JOIN table_2
+
+SELECT *from table_name NATURAL JOIN table_2;
+
+SELECT *from table_name LEFT OUTER JOIN Tb2;
+
+SELECT *from table_name t LEFT JOIN Tb2 t2 
+ON t.age=t2.age;
+
+SELECT *from table_name t RIGHT JOIN Tb2 t2 
+ON t.age=t2.age;
+
+SELECT *from table_name t INNER JOIN Tb2 t2 
+ON t.age=t2.age;
+
+SELECT *from table_name t FULL OUTER JOIN Tb2 t2 
+ON t.age=t2.age;
+

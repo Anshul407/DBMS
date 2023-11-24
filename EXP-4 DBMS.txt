@@ -1,0 +1,33 @@
+EXP-4
+implementation of AND, OR NOT BETWEEN operators
+DCL
+it is used to access the stored data,mainly used to grant and revoke.
+GRANT--it is used to give user access to perform specific task.
+syntax-- GRANT prv_name Table_name to user;
+
+REVOKE-used to take back user access by the admin
+syntax:-REVOKE priv_name ON obj_name FROM username;
+
+TCL(transaction control lang)
+commit , rollback
+
+LOGICAL OPERATORS
+it is used to filter and manipulate data within SQL queries
+--AND,OR,NOT,BETWEEN
+*AND is used to combine multiple condtions in SQL returns true if all the conditions true.
+*OR is use to combine multiple condtions in SQL returns true if atleast one condition is true
+*NOT is used to negate a condtion
+*BETWEEN is used to filter data within specific range
+
+1.SELECT *FROM empmst
+where ENAME='ANSHUL2' AND AGE='323'
+
+2.SELECT *FROM empmst
+where ENAME='ANSHUL2' OR AGE='323'
+
+3.SELECT *FROM empmst
+where NOT ENAME='Anshul2'
+
+4.SELECT *FROM empmst
+where AGE BETWEEN 30 AND 500
+

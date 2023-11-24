@@ -1,0 +1,15 @@
+EXP-3 implement DML manipulation on table
+
+DML-- used to modify the database,responsible for all modification in db.
+commands are insert,update,select,delete
+syntax:
+1.INSERT INTO empmst(EID,ENAME,CONTACT,AGE,EXPERIENCE,DID,EMAIL,DOJ,DOB)
+values('21','Anshul',332,323,3,'32','323','23','23')
+
+2.SELECT *from empmst
+
+3.update empmst SET AGE=10
+where EID='20'
+
+4.DELETE FROM empmst
+where EID='20'

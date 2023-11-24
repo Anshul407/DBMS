@@ -1,0 +1,39 @@
+EXP-5
+To implement the operators in , not in , any ,like,order by and agg function avg(),sum(),count(),min(),max() 
+
+Operator-used to filter and manipulation of data
+
+IN-Checks if the vlaue does match any value in a list
+
+NOT IN=check if the value does not match any value in list
+
+ANY=compare value to any value in subquery result
+
+ALL=compare a value to all values in a subquery
+
+LIKE=use for pattern matching
+
+ORDER BY=specify the sorting order for result set
+
+AGGREGRATE FUNCTION
+it is process of multiple rows of data to produce single result
+count=count no. of rows in table
+min=retrieves minimum value
+max=retrieves max value
+sum=add all the value
+avg=gives the avg value
+
+1.SELECT *FROM empmst order by age
+
+2.SELECT *FROM empmst WHERE ENAME like '%A'
+
+3.SELECT *FROM empmst WHERE AGE not in (20,45)
+
+4.SELECT *FROM empmst WHERE AGE =any(23,500)
+5.SELECT *FROM empmst WHERE AGE =all(23,500)
+6.SELECT *FROM empmst WHERE AGE in (23,500)
+7.SELECT count (*) FROM empmst 
+8.SELECT avg (AGE) FROM empmst 
+9.SELECT SUM (AGE) FROM empmst 
+10.SELECT MIN (AGE) FROM empmst 
+11.SELECT MAX(AGE) FROM empmst 

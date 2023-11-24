@@ -1,0 +1,23 @@
+EXP-1
+1.DDL-data defn lang
+ex-create,alter,drop,truncate.
+Create is used for creating db,
+alter is used to update directly on table
+drop is use to delete complete table
+truncate -table ke entries ko delete krne ke liye
+
+2.DML-data manipulation language
+ex-SELECT,INSERT,UPDATE,DELETE
+SELECT ka use retrieve krne ke liye hota hai
+insert use to update value in table
+delete ka use saare entires ko one by one deletee krne ke liye hota hai
+
+3.DCL-data control language
+grant and revoke
+
+4.TCL-transaction contorl language
+commit and rollback
+commit is used to save all the transaction to db
+rollback is used to undo transaction that is not already save into the database
+
+
