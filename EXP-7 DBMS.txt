@@ -1,0 +1,31 @@
+exp-7
+implement group by , having and agg function
+
+GROUP By-it groups that statement that have same value into summary row
+
+HAVING clause=it is used in the replacement of where keyword because where keyword is not used with 
+agg function
+
+SYNTAX
+*group by
+SELECT col_name from table_name GROUP BY COL_NAME;
+
+*AVG()AND GROUP BY
+SELECT AVG(col_name) from table_name GROUP BY COL_NAME;
+
+*sum()AND GROUP BY
+SELECT  SUM(col_name) from table_name GROUP BY COL_NAME;
+
+*min()AND GROUP BY
+SELECT MIN(col_name) from table_name GROUP BY COL_NAME;
+
+*max()AND GROUP BY
+SELECT MAX(col_name) from table_name GROUP BY COL_NAME;
+
+*count()AND GROUP BY
+SELECT count(col_name) from table_name GROUP BY COL_NAME;
+
+example-SELECT sum(salary) from employee GROUP BY dept having avg(salary)>10000;
+
+
+

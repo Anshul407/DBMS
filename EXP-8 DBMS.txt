@@ -1,0 +1,32 @@
+exp-7 implementation of subqueries and view on table
+
+VIEW-it is a virtual table that derived from the result of select query.
+Views in SQL are kind of virtual tables. A view also has rows and columns as they are in a real table in the database. 
+
+TYPES-read only view , updatable view
+
+READ only view-in this user are only allow to query the data but does not permit any modification.
+
+UPDATABLE VIEW-user can allow to perform modification like-insert,update,delete
+
+SUBqueries=also known as nested or inner queries,used to retrieve the data that will be used as part of main queries.
+Subquery can be simply defined as a query within another query.
+
+single row subquery and multiple row subqueries are the type.
+
+SYNTAX AND CODE
+
+**Read only view
+Create view v_name as select att_names from table_name with READ ONLY;
+
+**updatable view
+Create view v_name as select att_names from table_name;
+
+**Single row subquery
+SELECT ATTRIBUTES_NAME FROM TABLE_NAME WHERE COL_NAME=(SUBQUERY);
+
+**MULTIPLE ROW SUBQUERY
+SELECT ATTRIBUTES_NAME FROM TABLE_NAME WHERE COL_NAME=AGG_FUNCTION()(SUBQUERY);
+
+
+

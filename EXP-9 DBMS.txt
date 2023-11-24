@@ -1,0 +1,39 @@
+EXP-9 INDEXES AND CURSOR
+
+INDEX:-it is a db structure associated with table to allows the db system to quickly locate and access the specific row of db
+
+CURSOR:
+IT IS a db object that allows you to retrieve and manipulate row of data in a result set of return sql queries.
+Cursors allow us to process data row-by-row, which can be useful when we need to perform complex calculations or transformations on the data.
+Cursors allow us to iterate over a result set multiple times, which can be useful when we need to perform multiple operations on the same data.
+Cursors can be useful when we need to join multiple tables with complex relationships, such as when processing hierarchical data structures or when performing recursive queries.
+
+
+IMplicit cursor
+automatically created and managed by dbms
+syntax:
+DECLARE VARIABLE datatype;
+SELECT COL{ROW} INTO VARIABLE FROM TABLE_NAME WHERE CONDITION;
+
+Explicit cursor
+cursor which are created manually and managed by user
+
+DECLARE 
+CURSOR C_NAME IS SELECT COL_NAME
+FROM TB_NAME WHERE COND;
+VAR_NAME DATATYPE;
+BEGIN 
+OPEN CURSOR NAME;
+LOOP
+FETCH CURSOR NAME INTO VARNAME
+EXIT WHEN CONDITION
+END LOOP;
+CLOSE CURSOR_NAME;
+END;
+
+
+
+
+index syntax
+CREATE INDEX INDEX_NAME ON TABLE_NAME 
+(ATTRIBUTE_NAME);
